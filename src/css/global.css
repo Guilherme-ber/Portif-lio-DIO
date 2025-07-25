@@ -4,7 +4,22 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  letter-spacing: 1px;
 }
 
 :root {
+  --bg: #0d0126;
+  --primary-color: #ffffff;
+  --border-color: #150140;
+  --radial-primary-bg-color: #9d6dfe;
+  --radial-secondary-bg-color: #26035880;
+}
+
+.light {
+  --bg: #f8f6fc;
+  --primary-color: #000000;
+  --border-color: #5100ff;
+  --radial-primary-bg-color: #f4f3f6;
+  --radial-secondary-bg-color: #9373d9ce;
 }

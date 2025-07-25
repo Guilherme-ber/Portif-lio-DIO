@@ -5,9 +5,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
     <!-- Css -->
     <link rel="stylesheet" href="src/css/global.css" />
     <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/cardComponent.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Title & Description -->
     <meta
@@ -17,7 +38,360 @@
     <title>Portifólio Guilherme Bernardino Reis - DIO</title>
   </head>
   <body>
-    <h1>Olá Mundo</h1>
+    <header>
+      <div class="logo">
+        <a href="/">Guilherme Bernardino Reis</a>
+      </div>
+      <div class="menu">
+        <div class="menu-sections">
+          <ul>
+            <li><a id="btn-apresentation">Home</a></li>
+            <li><a id="btn-habilities">Habilidades</a></li>
+            <li><a id="btn-projects">Projetos</a></li>
+            <li><a id="btn-aboutMe">Sobre mim</a></li>
+          </ul>
+        </div>
+        <div class="menu-options">
+          <button id="language" class="menu-options__language">
+            Idioma<img src="./assets/down-arrow.png" />
+          </button>
+          <div id="language-dropdown" class="language-dropdown hidden">
+            <button onclick="setLanguage('pt')">Português</button>
+            <button onclick="setLanguage('en')">English</button>
+          </div>
+
+          <label class="menu-options__switch">
+            <input id="themeToggle" type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="apresentation" class="s-Apresentation">
+        <div class="texts">
+          <h1 id="a-title" class="title">
+            Olá, eu sou o <span>Guilherme</span>.
+          </h1>
+          <div class="description">
+            <p id="a-desc">
+              Desenvolvedor Front-end em transição para<br />Full-stack
+            </p>
+            <p id="a-desc2">
+              Meu objetivo é criar sites rápidos, bonitos e que ofereçam a
+              melhor<br />experiência possível para quem usa
+            </p>
+          </div>
+          <ul class="social-links">
+            <li>
+              <a href="https://www.instagram.com/guilh3rm.r/#" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/Guilherme-ber" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/guilherme-bernardino-reis-951532280/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="mailto:guilhermeb.reis112@gmail.com?subject=Contato%20do%20Portfólio"
+                target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+          <button id="btn-contact">Contate me</button>
+        </div>
+        <div class="avatar"></div>
+      </section>
+
+      <section id="habilities" class="s-Habilities">
+        <h2>Habilidades Técnicas</h2>
+        <ul class="skill-list">
+          <li class="languages">
+            <ul>
+              <li id="h-programingLanguages">Linguagens</li>
+              <li>
+                <i class="devicon-javascript-plain"></i>
+              </li>
+              <li>
+                <i class="devicon-python-plain"></i>
+              </li>
+              <li>
+                <i class="devicon-cplusplus-plain"></i>
+              </li>
+            </ul>
+          </li>
+          <li class="develop">
+            <ul>
+              <li id="h-develop">
+                Desenvolvimento Web<br />
+                Frameworks
+              </li>
+              <li>
+                <i class="devicon-html5-plain"></i>
+              </li>
+              <li>
+                <i class="devicon-css3-plain"></i>
+              </li>
+              <li>
+                <i class="devicon-react-original"></i>
+              </li>
+            </ul>
+          </li>
+          <li class="tools">
+            <ul>
+              <li id="h-tools">Ferramentas</li>
+              <li>
+                <i class="devicon-github-original"></i>
+              </li>
+              <li>
+                <i class="devicon-figma-plain"></i>
+              </li>
+              <li>
+                <i class="devicon-vscode-plain"></i>
+              </li>
+            </ul>
+          </li>
+          <li id="h-database" class="database">
+            <ul>
+              <li>Banco de dados</li>
+              <li>
+                <i class="devicon-firebase-plain"></i>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section id="projects" class="s-Projects">
+        <h2>Projetos</h2>
+        <div class="projects-list">
+          <div>
+            <div id="p-projects1Top" class="content-top"><p>Projeto 1</p></div>
+            <div class="content-bottom">
+              <h3 id="p-projects1BottomTitle">Plataforma de Cursos</h3>
+              <p id="p-projects1BottomDesc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <a href="https://github.com/Guilherme-ber" target="_blank">
+                <button>
+                  <i class="fa-brands fa-github"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div id="p-projects2Top" class="content-top"><p>Projeto 2</p></div>
+            <div class="content-bottom">
+              <h3 id="p-projects2BottomTitle">Plataforma de Cursos</h3>
+              <p id="p-projects2BottomDesc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <button>
+                <a href="https://github.com/Guilherme-ber" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </button>
+            </div>
+          </div>
+          <div>
+            <div id="p-projects3Top" class="content-top"><p>Projeto 3</p></div>
+            <div class="content-bottom">
+              <h3 id="p-projects3BottomTitle">Plataforma de Cursos</h3>
+              <p id="p-projects3BottomDesc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <button>
+                <a href="https://github.com/Guilherme-ber" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </button>
+            </div>
+          </div>
+          <div>
+            <div id="p-projects4Top" class="content-top"><p>Projeto 4</p></div>
+            <div class="content-bottom">
+              <h3 id="p-projects4BottomTitle">Plataforma de Cursos</h3>
+              <p id="p-projects4BottomDesc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+              <button>
+                <a href="https://github.com/Guilherme-ber" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="aboutMe" class="s-About-me">
+        <h2>Sobre mim</h2>
+        <div class="content">
+          <div>
+            <p id="a-aboutMeText1">
+              Olá! Me chamo <span class="name">Guilherme Bernardino Reis</span>,
+              tenho 18 anos e estudo Ciência da Computação no IF Sudeste MG –
+              Campus Rio Pomba. Minha paixão por tecnologia começou na infância,
+              explorando computadores e jogos. Desde o curso técnico em
+              Informática, me aprofundei na programação e hoje busco me tornar
+              um desenvolvedor <span>Full-stack</span>, com foco também em
+              <span>UI/UX Design</span>.
+            </p>
+          </div>
+          <div class="div__i-down">
+            <img
+              class="i-down"
+              src="/assets/imagem_2025-07-25_183442317.png"
+              alt="imagem de seta"
+            />
+          </div>
+          <div></div>
+          <div>
+            <p id="a-aboutMeText2">
+              Domino <span>HTML</span>, <span>CSS</span>,
+              <span>JavaScript</span>, <span>React</span>, <span>Python</span> e
+              <span>C++</span>, e estou aprendendo <span>Firebase</span>,
+              <span>PHP</span>, <span>Node.js</span> e <span>TypeScript</span>.
+              Aprendo tanto na faculdade quanto em cursos online e projetos
+              próprios.
+            </p>
+          </div>
+          <div>
+            <p id="a-aboutMeText3">
+              Gosto de criar <span>interfaces modernas e intuitivas</span>, mas
+              também estou evoluindo no back-end. Sou
+              <span>organizado, comunicativo e trabalho bem em equipe</span> —
+              já liderei um projeto de site de notícias.
+            </p>
+          </div>
+          <div></div>
+          <div class="div__i-right">
+            <img
+              class="i-right"
+              src="/assets/imagem_2025-07-25_183442317.png"
+              alt="imagem de seta"
+            />
+          </div>
+          <div>
+            <p id="a-aboutMeText4">
+              Fora da programação, curto <span>esportes</span>,
+              <span>música</span>, <span>animes</span> e
+              <span>jogos eletrônicos</span>. Estou em busca de estágios,
+              freelas ou vagas júnior que tragam experiência e oportunidades de
+              crescimento.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="s-Contact-me">
+        <h2>Contate me</h2>
+        <div class="contact-field">
+          <h3>Formulário de Contato</h3>
+          <form
+            action="https://formsubmit.co/3faf318b3ebdb7b23151528db36fad90"
+            method="POST"
+          >
+            <div class="form-grid">
+              <div class="form-fields">
+                <input id="name" name="nome" placeholder="Nome" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <textarea
+                  id="mensage"
+                  name="mensagem"
+                  placeholder="Mensagem"
+                  rows="5"
+                  cols="50"
+                  required
+                ></textarea>
+              </div>
+              <div class="content">
+                <p id="c-contactFormExplication" class="title">
+                  Ou me encontre pelas redes
+                </p>
+                <div>
+                  <p>Email: guilhermeb.reis112@gmail.com</p>
+                  <p>Instagram: guilh3rm.r</p>
+                  <p>Linkedin: Guilherme Bernardino Reis</p>
+                </div>
+              </div>
+            </div>
+            <input
+              class="submit-button"
+              type="submit"
+              value="Clique aqui para enviar"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.instagram.com/guilh3rm.r/#" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/Guilherme-ber" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/guilherme-bernardino-reis-951532280/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="mailto:guilhermeb.reis112@gmail.com?subject=Contato%20do%20Portfólio"
+            target="_blank"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="credits">
+        <p>© Guilherme Bernardino Reis • 2025</p>
+        <p id="c-credits">Feito por Guilherme Bernardino</p>
+      </div>
+    </footer>
+
+    <!-- button "back to top"
+    https://uiverse.io/vinodjangid07/afraid-falcon-17 -->
+
     <script src="src/js/main.js"></script>
+    <script src="src/js/traduction.js"></script>
   </body>
 </html>
